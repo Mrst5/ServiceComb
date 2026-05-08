@@ -78,36 +78,3 @@ button:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* This code only runs on screens smaller than 600px (phones) */
-@media (max-width: 600px) {
-    .backgound img {
-        width: 90%;      /* Shrink the bee so it fits the narrow screen */
-        height: auto;    /* Keep the bee from looking squished */
-    }
-
-    h1 {
-        font-size: 1.5rem; /* Make the text smaller so it doesn't wrap weirdly */
-    }
-
-    button {
-        width: 80%;      /* Make the button wider and easier to tap with a thumb */
-    }
-}
-
-/* Tablet Styles (Screens between 601px and 1024px) */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .backgound img {
-        width: 70%;      /* Slightly smaller than desktop, larger than phone */
-        max-width: 500px; /* Limits the size on larger tablets like iPads */
-    }
-
-    h1 {
-        font-size: 2.2rem; /* Medium size text */
-        padding: 0 20px;   /* Prevents text from touching the screen edges */
-    }
-
-    button {
-        padding: 15px 40px; /* Slightly larger "tap target" for fingers */
-        font-size: 1.1rem;
-    }
-}
